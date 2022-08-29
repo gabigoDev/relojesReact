@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 
-const CardWidget = (props) => {
+const CartWidget = (props) => {
     let items = props.items ?? 0;
     return (
         <Button variant="primary">    
@@ -8,4 +8,4 @@ const CardWidget = (props) => {
         </Button>
     )
 } 
-export default CardWidget;
+export default CartWidget;

@@ -1,3 +1,5 @@
+import ItemCount from './ItemCount';
+
 const ItemListContainer = (props) => {
     let contenido = props.contenido
     return ( 
@@ -6,6 +8,8 @@ const ItemListContainer = (props) => {
             TU RELOJERIA, TODO EL TIEMPO. 
         </h1> 
         {contenido}
+        <ItemCount stock={5} initial ={1} />
+
     </div>
     )
 }
