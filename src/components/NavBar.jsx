@@ -1,8 +1,8 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import CartWidget from './CartWidget'
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
     return (
@@ -25,21 +25,27 @@ const NavBar = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="#inicio">HOME</Nav.Link>
                         <Nav.Link href="#productos">PRODUCTOS</Nav.Link>
-                        <NavDropdown title="ALL DIA ECOLOGICOS" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Hombre</NavDropdown.Item>
+                        <NavDropdown
+                            title="ALL DIA ECOLOGICOS"
+                            id="basic-nav-dropdown"
+                        >
+                            <NavDropdown.Item href="#action/3.1">
+                                Hombre
+                            </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
                                 Mujer
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">SUMMER 2023</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">
+                                SUMMER 2023
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-            <CartWidget items = "7" />
-
+            <CartWidget items="7" />
         </Navbar>
-    )
-}
+    );
+};
 
-export default NavBar; 
+export default NavBar;

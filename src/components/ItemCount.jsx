@@ -23,7 +23,10 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                 >
                     <i className="fa-solid fa-minus"></i>
                 </button>
-                <input className="form-control text-center" value={count}></input>
+                <input
+                    className="form-control text-center"
+                    value={count}
+                ></input>
                 <button
                     className="btn btn-outline-primary"
                     type="button"
@@ -32,7 +35,13 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </div>
-            <button className="btn btn-outline-primary" disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito </button>
+            <button
+                className="btn btn-outline-primary"
+                disabled={stock <= 0}
+                onClick={() => onAdd(count)}
+            >
+                Agregar al carrito{" "}
+            </button>
         </div>
     );
 };
