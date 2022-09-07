@@ -4,7 +4,7 @@ const CartWidget = (props) => {
     let items = props.items ?? 0;
     return (
         <Button variant="primary">    
-            <i class="fa-solid fa-cart-shopping"></i> <span class= "ml-1">{items}</span>
+            <i className="fa-solid fa-cart-shopping"></i> <span className= "ml-1">{items}</span>
         </Button>
     )
 } 

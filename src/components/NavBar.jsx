@@ -11,9 +11,8 @@ const NavBar = () => {
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
-                            src="https://images.unsplash.com/photo-1439754389055-9f0855aa82c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                            width="100px"
-                            height="100px"
+                            src="AllDiaRelojes.png"
+                            width="300px"
                             className="d-inline-block align-top"
                             alt="logo ALLDIA"
                         />
@@ -23,19 +22,19 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#inicio">HOME</Nav.Link>
-                        <Nav.Link href="#productos">PRODUCTOS</Nav.Link>
-                        <NavDropdown
+                        <Nav.Link href="#inicio" className="text-white">HOME</Nav.Link>
+                        <Nav.Link href="#productos" className="text-white">PRODUCTOS</Nav.Link>
+                        <NavDropdown variant="light"
                             title="ALL DIA ECOLOGICOS"
                             id="basic-nav-dropdown"
                         >
                             <NavDropdown.Item href="#action/3.1">
                                 Hombre
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
+                            <NavDropdown.Item href="#action/3.2" >
                                 Mujer
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">
+                            <NavDropdown.Item href="#action/3.3" >
                                 SUMMER 2023
                             </NavDropdown.Item>
                             <NavDropdown.Divider />

@@ -33,7 +33,9 @@ const ItemListContainer = (props) => {
     }, []);
     return (
         <div>
-            <h1>TU RELOJERIA, TODO EL TIEMPO.</h1>
+            <h1 className="text-center m-2 titular">
+                Tu relojeria todo el tiempo.
+            </h1>
             {contenido}
             <ItemList data={data} />
         </div>
