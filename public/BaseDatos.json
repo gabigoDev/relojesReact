@@ -1,0 +1,16 @@
+{
+    "img": "https://stylewatch.vtexassets.com/arquivos/ids/211253/Reloj_Swatch_SBSWSB03N102_03.jpg?v=637835636675430000",
+    "relojId": 1,
+    "nombre": "Big Bold Bioceramic",
+    "marca": "Reloj Swatch ",
+    "precio": "$40.000",
+    "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
+    "caracteristicas": {
+        "MaterialCorrea":"Material de origen biologico ",
+        "MaterialBroche":"Aluminio",
+        "HebillaCorrea":"Media Hebilla",
+        "Coleccion":"Bioceramic",
+        "Color":"Azul"
+    },
+    "descuento": false
+}

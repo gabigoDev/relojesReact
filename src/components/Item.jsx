@@ -7,7 +7,7 @@ const agregarItem = (items) => {
 };
 const Item = ({ info }) => {
     return (
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "25rem" }}>
             <Card.Img variant="top" src={info.image} alt="" />
             <Card.Body>
                 <Card.Title>{info.title}</Card.Title>

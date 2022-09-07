@@ -25,14 +25,14 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                 </button>
                 <input
                     className="form-control text-center"
-                    value={count}
+                    value={count} readOnly={true}
                 ></input>
                 <button
                     className="btn btn-outline-primary"
                     type="button"
                     onClick={addNumber}
                 >
-                    <i class="fa-solid fa-plus"></i>
+                    <i className="fa-solid fa-plus"></i>
                 </button>
             </div>
             <button
