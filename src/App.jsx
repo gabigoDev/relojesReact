@@ -7,11 +7,11 @@ import ItemDetailConteiner from "./components/ItemDetailConteiner";
 function Application() {
     return (
         <>
-        <NavBar />
         <BrowserRouter>
+        <NavBar />
         <Routes>
             <Route path="/productos" element={<ItemListContainer/>}/>
-            <Route path="/detalles" element= {<ItemDetailConteiner/>}/>
+            <Route path="/productos/:productId" element= {<ItemDetailConteiner/>}/>
         </Routes>
         </BrowserRouter>                                                     
         </>
@@ -21,5 +21,3 @@ function Application() {
 export default Application;
 
 
-//<ItemListContainer contenido="" />
-//<ItemDetailConteiner/> 

@@ -1,12 +1,11 @@
 const ItemDetail = (props) => {
-    console.log(props);
     return (
         <div className="tipografia d-flex ">
-            <div>
-                <img src={props.item.img} alt="reloj azul" />
+            <div className="">
+                <img src={props.item.img} className="" alt="reloj azul" />
             </div>
 
-            <div className="estiloTexto">
+            <div className="estiloTexto w-50">
                 <hr />
                 <h3>Nombre: {props.item.nombre}</h3>
                 <h4>Marca: {props.item.marca}</h4>
