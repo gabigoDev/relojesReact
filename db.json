@@ -1,0 +1,98 @@
+[
+    {
+        "img": "https://stylewatch.vtexassets.com/arquivos/ids/211253/Reloj_Swatch_SBSWSB03N102_03.jpg?v=637835636675430000",
+        "relojId": 1,
+        "nombre": "Big Bold Bioceramic",
+        "marca": "Reloj Swatch ",
+        "precio": "$40.000",
+        "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
+        "caracteristicas": {
+            "MaterialCorrea": "Material de origen biologico ",
+            "MaterialBroche": "Aluminio",
+            "HebillaCorrea": "Media Hebilla",
+            "Coleccion": "Bioceramic",
+            "Color": "Azul"
+        },
+        "descuento": false
+    }, 
+    {
+        "img": "https://stylewatch.vtexassets.com/arquivos/ids/166624/swatch_suom111.jpg?v=636681467499530000",
+        "relojId": 2,
+        "nombre": "Reloj Swatch Powderbayang para mujer",
+        "marca": "Reloj Swatch ",
+        "precio": "$50.000",
+        "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
+        "caracteristicas": {
+            "MaterialCorrea": "Material de origen biologico ",
+            "MaterialBroche": "Aluminio",
+            "HebillaCorrea": "Media Hebilla",
+            "Coleccion": "Bioceramic",
+            "Color": "Azul"
+        },
+        "descuento": false
+    }, 
+    {
+        "img": "https://stylewatch.vtexassets.com/arquivos/ids/208242/Reloj_Swatch_SO28K100_01.jpg?v=637783006174400000",
+        "relojId": 3,
+        "nombre": "Reloj Swatch Clearly Gent para hombre ",
+        "marca": "Reloj Swatch ",
+        "precio": "$50.000",
+        "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
+        "caracteristicas": {
+            "MaterialCorrea": "Material de origen biologico ",
+            "MaterialBroche": "Aluminio",
+            "HebillaCorrea": "Media Hebilla",
+            "Coleccion": "Bioceramic",
+            "Color": "Azul"
+        },
+        "descuento": false
+    },
+    {
+        "img": "https://stylewatch.vtexassets.com/arquivos/ids/219224/Relojes_Tommy_Hilfiger_TH1791482_01.jpg?v=637980767083370000",
+        "relojId": 4,
+        "nombre": "Reloj Tommy Hilfiger Denim ",
+        "marca": "Reloj Tommy Hilfiger",
+        "precio": "$50.000",
+        "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
+        "caracteristicas": {
+            "MaterialCorrea": "Material de origen biologico ",
+            "MaterialBroche": "Aluminio",
+            "HebillaCorrea": "Media Hebilla",
+            "Coleccion": "Bioceramic",
+            "Color": "Azul"
+        },
+        "descuento": false
+    },
+    {
+        "img": "https://stylewatch.vtexassets.com/arquivos/ids/182538/1782244.jpg?v=637369134063900000",
+        "relojId": 5,
+        "nombre": "Reloj Tommy Hilfiger Alex para mujer ",
+        "marca": "Reloj Tommy Hilfiger",
+        "precio": "$45.000",
+        "descripcion": "Reloj de mujer Tommy Hilfiger 1782244 . Con este modelo de la colección Alex tendrás un look moderno y juvenil. ",
+        "caracteristicas": {
+            "MaterialCorrea": "Material de origen biologico ",
+            "MaterialBroche": "Aluminio",
+            "HebillaCorrea": "Media Hebilla",
+            "Coleccion": "Acero inoxidable",
+            "Color": "Plateado"
+        },
+        "descuento": false
+    },
+    {
+        "img": "https://stylewatch.vtexassets.com/arquivos/ids/218933/Relojes_Tommy_Hilfiger_TH1782551_01.jpg?v=637967890436270000",
+        "relojId": 6,
+        "nombre": "Reloj Tommy Hilfiger Rachel",
+        "marca": "Reloj Tommy Hilfiger",
+        "precio": "$65.000",
+        "descripcion": "Un icono sofisticado y distintivo, esta nueva temporada este reloj Tommy Hilfiger es uno de los favoritos gracias a la elegante textura de esfera de rayos de sol con índices aplicados y elementos de marca en todas partes.",
+        "caracteristicas": {
+            "MaterialCorrea": "Acero inoxidable",
+            "MaterialBroche": "Aluminio",
+            "HebillaCorrea": "Media Hebilla",
+            "Coleccion": "Alex",
+            "Color": "Rosé"
+        },
+        "descuento": false
+    }
+]

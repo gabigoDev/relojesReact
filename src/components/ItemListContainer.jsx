@@ -17,6 +17,18 @@ const productos = [
         image: "https://stylewatch.vtexassets.com/arquivos/ids/208242/Reloj_Swatch_SO28K100_01.jpg?v=637783006174400000",
         title: "Reloj Swatch Clearly Gent para hombre ",
     },
+    {   id: 4,
+        image: "https://stylewatch.vtexassets.com/arquivos/ids/219224/Relojes_Tommy_Hilfiger_TH1791482_01.jpg?v=637980767083370000",
+        title: "Reloj Tommy Hilfiger Denim ",
+    },
+    {   id: 5,
+        image: "https://stylewatch.vtexassets.com/arquivos/ids/182538/1782244.jpg?v=637369134063900000",
+        title: "Reloj Tommy Hilfiger Alex para mujer ",
+    },
+    {   id: 6,
+        image: "https://stylewatch.vtexassets.com/arquivos/ids/218933/Relojes_Tommy_Hilfiger_TH1782551_01.jpg?v=637967890436270000",
+        title: "Reloj Tommy Hilfiger Rachel",
+    },
 ];
 
 const ItemListContainer = (props) => {
