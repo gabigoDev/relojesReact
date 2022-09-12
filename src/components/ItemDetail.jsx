@@ -1,3 +1,9 @@
+import ItemCount from "./ItemCount";
+
+const agregarItem = (items) => {
+    console.log(`compraste ${items} unidades`);
+};
+
 const ItemDetail = (props) => {
     return (
         <div className="tipografia d-flex ">
@@ -34,6 +40,8 @@ const ItemDetail = (props) => {
                     </ul>
                 </h4>
                 <hr />
+                <ItemCount initial={1} stock={5} onAdd={agregarItem} />
+
             </div>
         </div>
     );

@@ -29,16 +29,12 @@ const NavBar = () => {
                             title="ALL DIA ECOLOGICOS"
                             id="basic-nav-dropdown"
                         >
-                            <NavDropdown.Item to="#action/3.1">
+                            <NavDropdown.Item to="/categoria/1" as={NavLink}>
                                 Hombre
                             </NavDropdown.Item>
-                            <NavDropdown.Item to="#action/3.2" >
+                            <NavDropdown.Item to="/categoria/2" as={NavLink} >
                                 Mujer
                             </NavDropdown.Item>
-                            <NavDropdown.Item to="#action/3.3" >
-                                SUMMER 2023
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
