@@ -13,11 +13,10 @@ const ItemListContainer = (props) => {
         fetch("https://my-json-server.typicode.com/gabigoDev/relojesReact/productos?"+filter)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 setData(data);
                 setLoaded(true);
             });
-    }, []);
+    }, [params]);
     
     return (
         <div>
