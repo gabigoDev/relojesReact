@@ -1,10 +1,19 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
-const agregarItem = (items) => {
-    console.log(`compraste ${items} unidades`);
-};
-
 const ItemDetail = (props) => {
+    const [countItems, setCountItems] = useState(0);
+
+    const agregarItem = (count) => {
+        alert(`Agregaste ${count} unidades.`)
+        setCountItems(count)
+    };
+
+    const linkToCart = <div className="d-grid">
+                    <Link to="/cart" className="btn btn-outline-primary">Terminar Compra</Link>
+                </div>
+
     return (
         <div className="tipografia d-flex ">
             <div className="">
@@ -40,8 +49,9 @@ const ItemDetail = (props) => {
                     </ul>
                 </h4>
                 <hr />
-                <ItemCount initial={1} stock={5} onAdd={agregarItem} />
-
+                { countItems == 0 ? 
+                    <ItemCount initial={1} stock={5} onAdd={agregarItem} /> : linkToCart
+                }
             </div>
         </div>
     );

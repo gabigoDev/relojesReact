@@ -10,7 +10,7 @@ const NavBar = () => {
         <Navbar bg="secondary" expand="lg">
             <Container>
                 <Container>
-                    <Navbar.Brand to="#home">
+                    <Navbar.Brand to="/" as={NavLink}> 
                         <img
                             src="/AllDiaRelojes.png"
                             width="300px"
@@ -23,7 +23,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link to="/inicio" as={NavLink} className="text-white">HOME</Nav.Link>
+                        <Nav.Link to="/" as={NavLink} className="text-white">HOME</Nav.Link>
                         <Nav.Link to ="/categoria/all" as={NavLink} className="text-white">PRODUCTOS</Nav.Link>
                         <NavDropdown variant="light"
                             title="CATEGORIAS"
