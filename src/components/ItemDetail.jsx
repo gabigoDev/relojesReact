@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
+import context, {Context} from "react-bootstrap/esm/AccordionContext";
 
 const ItemDetail = (props) => {
     const [countItems, setCountItems] = useState(0);
+    const {addItem} = useContext(context)
 
     const agregarItem = (count) => {
+        addItem(item, quantity)
         alert(`Agregaste ${count} unidades.`)
         setCountItems(count)
     };

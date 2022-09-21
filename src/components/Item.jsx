@@ -1,7 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-
+import { Context } from "./CartContext";
+import { useContext, useState } from "react";
+import Context from "react-bootstrap/esm/AccordionContext";
 
 const Item = ({ info }) => {
     return (
