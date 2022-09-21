@@ -1,14 +1,19 @@
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
-import context, {Context} from "react-bootstrap/esm/AccordionContext";
+import {Context} from "../components/CartContext";
 
 const ItemDetail = (props) => {
-    const [countItems, setCountItems] = useState(0);
-    const {addItem} = useContext(context)
+    let item = props.item;
+    const [countItems,setCountItems] = useState(0);
+    const {addItem} = useContext(Context)
+    const onAdd = (countItems) =>{
+        addItem(item,countItems);
+        setCountItems (ItemCount + agregarItem);
+    }
 
     const agregarItem = (count) => {
-        addItem(item, quantity)
+        addItem(item, count)
         alert(`Agregaste ${count} unidades.`)
         setCountItems(count)
     };
@@ -58,6 +63,6 @@ const ItemDetail = (props) => {
             </div>
         </div>
     );
-};
+            };       
 
 export default ItemDetail;
