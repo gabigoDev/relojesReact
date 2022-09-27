@@ -17,7 +17,7 @@ const CartItem = ({item}) =>  {
                     <span className="text-truncate w-50">{item.descripcion.substring(0,50)}...</span>
                 </div>
                 <h4>Cantidad: <span>{item.quantity}</span></h4>
-                <h4><span>{item.quantity * item.precio}</span></h4>
+                <h4>$ <span>{item.quantity * item.precio}</span></h4>
             </div>
             <button className={"btn btn-danger"} onClick={handleBorrar}>Eliminar Producto</button>
         </li>

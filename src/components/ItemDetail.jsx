@@ -30,7 +30,7 @@ const ItemDetail = (props) => {
                 <hr />
                 <h3>Nombre: {props.item.nombre}</h3>
                 <h4>Marca: {props.item.marca}</h4>
-                <h4>Precio: {props.item.precio}</h4>
+                <h4>Precio: ${props.item.precio}</h4>
                 <h4>Descripcion: {props.item.descripcion}</h4>
                 <h4>
                     Caracteristicas:
