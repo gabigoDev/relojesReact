@@ -6,7 +6,7 @@
             "categoriaId":1,
             "nombre": "Big Bold Bioceramic",
             "marca": "Reloj Swatch ",
-            "precio": "$40.000",
+            "precio": 40000,
             "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
             "caracteristicas": {
                 "MaterialCorrea": "Material de origen biologico ",
@@ -23,7 +23,7 @@
             "categoriaId":2,
             "nombre": "Reloj Swatch Powderbayang para mujer",
             "marca": "Reloj Swatch ",
-            "precio": "$50.000",
+            "precio": 50000,
             "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
             "caracteristicas": {
                 "MaterialCorrea": "Material de origen biologico ",
@@ -40,7 +40,7 @@
             "categoriaId":1,
             "nombre": "Reloj Swatch Clearly Gent para hombre ",
             "marca": "Reloj Swatch ",
-            "precio": "$50.000",
+            "precio": 50000,
             "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
             "caracteristicas": {
                 "MaterialCorrea": "Material de origen biologico ",
@@ -57,7 +57,7 @@
             "categoriaId":1,
             "nombre": "Reloj Tommy Hilfiger Denim ",
             "marca": "Reloj Tommy Hilfiger",
-            "precio": "$50.000",
+            "precio": 50000,
             "descripcion": "Big Bold presenta una colección inspirada en ideas atrevidas para personalidades valientes.Con modelos basados en la moda urbana, estos relojes tienen una caja sencillamente impresionante, con un diámetro de Ø47 mm y grandes manecillas en forma de flecha que te indicarán cuál debe ser tu siguiente paso para tomar la dirección adecuada. Grandes y atrevidos: ya están aquí. ",
             "caracteristicas": {
                 "MaterialCorrea": "Material de origen biologico ",
@@ -74,7 +74,7 @@
             "categoriaId":2,
             "nombre": "Reloj Tommy Hilfiger Alex para mujer ",
             "marca": "Reloj Tommy Hilfiger",
-            "precio": "$45.000",
+            "precio": 40000,
             "descripcion": "Reloj de mujer Tommy Hilfiger 1782244 . Con este modelo de la colección Alex tendrás un look moderno y juvenil. ",
             "caracteristicas": {
                 "MaterialCorrea": "Material de origen biologico ",
@@ -91,7 +91,7 @@
             "categoriaId":2,
             "nombre": "Reloj Tommy Hilfiger Rachel",
             "marca": "Reloj Tommy Hilfiger",
-            "precio": "$65.000",
+            "precio": 65000,
             "descripcion": "Un icono sofisticado y distintivo, esta nueva temporada este reloj Tommy Hilfiger es uno de los favoritos gracias a la elegante textura de esfera de rayos de sol con índices aplicados y elementos de marca en todas partes.",
             "caracteristicas": {
                 "MaterialCorrea": "Acero inoxidable",

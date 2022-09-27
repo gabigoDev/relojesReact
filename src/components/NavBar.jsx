@@ -36,10 +36,10 @@ const NavBar = () => {
                                 Mujer
                             </NavDropdown.Item>
                         </NavDropdown>
+                        <CartWidget />
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-            <CartWidget items="7" />
         </Navbar>
     );
 };

@@ -2,19 +2,17 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import {Context} from "../components/CartContext";
+import Image from 'react-bootstrap/Image';
+
+import style from '../App.css';
 
 const ItemDetail = (props) => {
     let item = props.item;
     const [countItems,setCountItems] = useState(0);
     const {addItem} = useContext(Context)
-    const onAdd = (countItems) =>{
-        addItem(item,countItems);
-        setCountItems (ItemCount + agregarItem);
-    }
-
+    
     const agregarItem = (count) => {
         addItem(item, count)
-        alert(`Agregaste ${count} unidades.`)
         setCountItems(count)
     };
 
@@ -24,11 +22,11 @@ const ItemDetail = (props) => {
 
     return (
         <div className="tipografia d-flex ">
-            <div className="">
-                <img src={props.item.img} className="" alt="reloj azul" />
+            <div className="item-detail__image align-self-center">
+                <Image src={props.item.img}  fluid={true} alt="reloj azul" />
             </div>
 
-            <div className="estiloTexto w-50">
+            <div className="estiloTexto item-detail__description">
                 <hr />
                 <h3>Nombre: {props.item.nombre}</h3>
                 <h4>Marca: {props.item.marca}</h4>
@@ -38,20 +36,19 @@ const ItemDetail = (props) => {
                     Caracteristicas:
                     <ul>
                         <li>
-                            {" "}
-                            Material de la correa:{" "}
+                            Material de la correa:
                             {props.item.caracteristicas?.MaterialCorrea}
                         </li>
                         <li>
-                            Material del broche:{" "}
+                            Material del broche:
                             {props.item.caracteristicas?.MaterialBroche}
                         </li>
                         <li>
-                            Hebilla de correa :{" "}
+                            Hebilla de correa :
                             {props.item.caracteristicas?.HebillaCorrea}
                         </li>
                         <li>
-                            Coleccion: {props.item.caracteristicas?.Coleccion}{" "}
+                            Coleccion: {props.item.caracteristicas?.Coleccion}
                         </li>
                         <li>Color: {props.item.caracteristicas?.Color}</li>
                     </ul>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 import ItemDetail from "./ItemDetail";
@@ -17,6 +18,9 @@ const ItemDetailConteinter = () => {
             });
     }, []);
 
-    return <ItemDetail item={itemDetail} />;
+    return (
+    <Container>
+        <ItemDetail item={itemDetail} />
+    </Container>);
 };
 export default ItemDetailConteinter;

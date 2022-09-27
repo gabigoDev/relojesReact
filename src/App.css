@@ -47,3 +47,9 @@
 .estiloTexto{
   margin-top: 10%;
 }
+.item-detail__image{
+  min-width: 40%;
+}
+.cart__image{
+  max-width: 10% !important;
+}
