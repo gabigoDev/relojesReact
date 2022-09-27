@@ -2,30 +2,36 @@ import { createContext, useState } from "react";
 
 export const Context = createContext();
 
-const CartContext = ({children}) => {
-    const [carrito, setCarrito] = useState ([]);
-    const deleteItem = (itemId)=>{
-        const carritoFiltrado = carrito.filter ((reloj) => reloj.id !== itemId);
+const CartContext = ({ children }) => {
+    const [carrito, setCarrito] = useState([]);
+    const deleteItem = (itemId) => {
+        const carritoFiltrado = carrito.filter((reloj) => reloj.id !== itemId);
         setCarrito(carritoFiltrado);
     };
-    const clearCart = ()=> {
-        setCarrito ([]);
+    const clearCart = () => {
+        setCarrito([]);
     };
-    const isInCart = (itemId)=>{
-        let articuloExistente = carrito.find ((reloj)=> reloj.id === itemId);
-        if (articuloExistente) {return true}
-        return false;
-        };
-    const addItem = (item, quantity)=>{
-        console.log (item);
-        let articuloExistente = carrito.find ((reloj)=> reloj.id === item.id);
-        if (articuloExistente) { articuloExistente.quantity +=quantity;
+    const isInCart = (itemId) => {
+        return carrito.find((reloj) => reloj.id === itemId);
+    };
+    const addItem = (item, quantity) => {
+        let articuloExistente = isInCart(item.id);
+        if (articuloExistente) {
+            articuloExistente.quantity += quantity;
         } else {
-            item.quantity=quantity;
-            setCarrito([...carrito, item]);}
-            console.log (carrito);
+            item.quantity = quantity;
+            carrito.push(item);
+        }
+        setCarrito([...carrito]);
     };
-    return <Context.Provider value={{addItem, isInCart, clearCart, deleteItem, carrito}}>{children}</Context.Provider>;
+
+    return (
+        <Context.Provider
+            value={{ addItem, isInCart, clearCart, deleteItem, carrito }}
+        >
+            {children}
+        </Context.Provider>
+    );
 };
 
 export default CartContext;
