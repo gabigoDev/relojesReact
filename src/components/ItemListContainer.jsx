@@ -21,7 +21,7 @@ const ItemListContainer = (props) => {
     return (
         <div>
             <h1 className="text-center m-2 titular">
-                Tu relojeria todo el tiempo.
+                Tu tiempo, al alcance de tu mano. 
             </h1>
             {loaded === false ? loading : contenido}
             <ItemList data={data} />

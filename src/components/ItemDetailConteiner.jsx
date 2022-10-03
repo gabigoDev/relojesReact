@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-
+import {getFirestore} from 'firebase/firestore';
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailConteinter = () => {
@@ -16,7 +16,7 @@ const ItemDetailConteinter = () => {
             .then((data) => {
                 setData(data);
             });
-    }, []);
+    }, [id]);
 
     return (
     <Container>
