@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import Context from "react-bootstrap/esm/AccordionContext";
@@ -6,9 +6,9 @@ import Context from "react-bootstrap/esm/AccordionContext";
 const Item = ({ info }) => {
     return (
         <Card style={{ width: "25rem" }}>
-            <Card.Img variant="top" src={info.img} alt="" />
+            <Card.Img variant="top" src={info.image} alt="" />
             <Card.Body>
-                <Card.Title>{info.nombre}</Card.Title>
+                <Card.Title className="tipografia">{info.title}</Card.Title>
 
                 <div className="mt-2 d-grid">
                     <Link
@@ -22,6 +22,5 @@ const Item = ({ info }) => {
         </Card>
     );
 };
-
 
 export default Item;
