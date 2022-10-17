@@ -4,6 +4,8 @@ import CartItem from "./CartItem";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
+import CheckoutForm from "./CheckoutForm";
+import swal from "sweetalert";
 
 const Cart = () => {
     const { carrito, clearCart } = useContext(Context);
@@ -13,12 +15,6 @@ const Cart = () => {
             0
         ) ?? 0;
     const order = {
-        buyer: {
-            name: "Jesus Prueba",
-            email: "jesus@probando.org",
-            phone: "54655465",
-            address: "tu casa",
-        },
         items: carrito.map((product) => {
             return {
                 id: product.id,
@@ -28,22 +24,25 @@ const Cart = () => {
         }),
         totalPrice: total,
     };
-    console.log(order);
 
-    const handleBuyCart = () => {
+    const handleBuyCart = (buyerData) => {
         const db = getFirestore();
         const ordersCollection = collection(db, "orders");
+        order.buyer = buyerData;
         addDoc(ordersCollection, order).then(({ id }) => {
-            alert("Su orden de compra es: " + id);
+            swal("Exito!", "Su orden de compra es: " + id, "success");
             clearCart();
         });
     };
     return (
         <>
             <Container>
-                <h1 className="text-center m-2 text-decoration-underline">
+            <h1 className="text-center m-2 text-decoration-underline">
                     Carrito
                 </h1>
+                <div className="row">
+                <div className="col-12 col-lg-8 border-top pt-2">
+
                 <ol className="list-group list-group-numbered">
                     {carrito.length === 0 ? (
                         <>
@@ -63,28 +62,22 @@ const Cart = () => {
                         ))
                     )}
                 </ol>
-                <hr />
+                </div>
                 {carrito.length === 0 ? (
                     ""
                 ) : (
                     <>
-                        <h2>Total: ${total}</h2>
-                        <div className="d-flex gap-2">
-                            <button
-                                className="btn btn-success w-100"
-                                onClick={handleBuyCart}
-                            >
-                                Comprar Carrito
-                            </button>
-                            <button
-                                className="btn btn-secondary w-100"
-                                onClick={clearCart}
-                            >
-                                Limpiar Carrito
-                            </button>
-                        </div>{" "}
+                    <div className="col-12 col-lg-4 d-flex flex-column gap-5">
+                        <h3 className="d-flex justify-content-around gap-2">
+                            <div><b>Total</b></div>
+                            <div>${total}</div>
+                        </h3>
+                        <hr/>
+                    <CheckoutForm  onConfirm={handleBuyCart} onReset={clearCart} />
+                    </div>
                     </>
                 )}
+                </div>
             </Container>
         </>
     );
