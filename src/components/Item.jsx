@@ -13,7 +13,7 @@ const Item = ({ info }) => {
                 <div className="mt-2 d-grid">
                     <Link
                         className="btn btn-outline-primary"
-                        to={"/productos/" + info.id}
+                        to={"/item/" + info.id}
                     >
                         Ver Detalles
                     </Link>

@@ -33,7 +33,7 @@ const Home = () => {
             <div>
                 <img
                     className="img-fluid"
-                    src="https://stylewatchio.vtexassets.com/assets/vtex.file-manager-graphql/images/91c0392a-11a9-49aa-97aa-356a5ff72baa___78be1fc5eb0249d940ad7687e53f78d3.jpg"
+                    src="/imagenes/imgBulova.jpg"                    
                     alt=""
                 />
             </div>
@@ -107,7 +107,7 @@ const Home = () => {
                 <div>
                     <img
                     className="img-fluid"
-                        src="https://stylewatchio.vtexassets.com/assets/vtex.file-manager-graphql/images/52d4e2dc-c170-4635-a589-3e63fcaf9528___6daa3d5093a9356c51b07ce9b0b01169.jpg"
+                        src="/imagenes/imgTommy.jpg"
                         alt=""
                     />
                 </div>
@@ -115,7 +115,7 @@ const Home = () => {
                 <div>
                     <img
                     className="img-fluid"
-                        src="https://stylewatchio.vtexassets.com/assets/vtex.file-manager-graphql/images/7d0a4c0d-8929-4d97-bf6c-e0a8e97a5b3c___bc4225d4fdeb91b171101efde4f8f297.jpg"
+                        src="/imagenes/imgPagos.jpg"
                         alt="Medios de pago"
                     />
                 </div>

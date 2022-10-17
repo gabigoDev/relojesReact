@@ -37,6 +37,10 @@ const CheckoutForm = ({onConfirm, onReset}) => {
                     <input type="email" id="email" className="form-control" placeholder="ejemplo@mail.com" onChange={handleInputChange}/>
                 </div>
                 <div className="col-6 col-md-12">
+                    <label htmlFor="email" className="form-label">Email</label>
+                    <input type="email" id="email" className="form-control" placeholder="ejemplo@mail.com" onChange={handleInputChange}/>
+                </div>
+                <div className="col-6 col-md-12">
                     <label htmlFor="phone" className="form-label">Numero de telefono</label>
                     <input type="number" id="phone" className="form-control" placeholder="Numero de telefono" onChange={handleInputChange}/>
                 </div>

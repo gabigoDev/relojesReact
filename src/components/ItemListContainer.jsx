@@ -9,6 +9,7 @@ import {
     where,
     query,
 } from "firebase/firestore";
+import LoadingWidget from "./LoadingWidget";
 
 const ItemListContainer = (props) => {
     let contenido = props.contenido;
@@ -16,7 +17,7 @@ const ItemListContainer = (props) => {
     const [loaded, setLoaded] = useState(false);
     const params = useParams();
     let filter = params.categoryId ? params.categoryId : false;
-    let loading = <div>Loading</div>;
+    let loading = <LoadingWidget/>;
     useEffect(() => {
         const fs = getFirestore(db);
         let itemRef = collection(fs, "items");

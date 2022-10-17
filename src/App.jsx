@@ -6,29 +6,31 @@ import ItemDetailConteiner from "./components/ItemDetailConteiner";
 import Cart from "./components/Cart";
 import Home from "./components/Home";
 import CartContext from "./components/CartContext";
+import NotFound from "./components/NotFound";
 
 function Application() {
     return (
         <>
             <BrowserRouter>
-            <CartContext>
-                <NavBar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route
-                        path="/categoria/all"
-                        element={<ItemListContainer />}
-                    />
-                    <Route
-                        path="/categoria/:categoryId"
-                        element={<ItemListContainer />}
-                    />
-                    <Route
-                        path="/productos/:productId"
-                        element={<ItemDetailConteiner />}
-                    />
-                    <Route path="/cart" element={<Cart />} />
-                </Routes>
+                <CartContext>
+                    <NavBar />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route
+                            path="/categories/all"
+                            element={<ItemListContainer />}
+                        />
+                        <Route
+                            path="/categories/:categoryId"
+                            element={<ItemListContainer />}
+                        />
+                        <Route
+                            path="/item/:productId"
+                            element={<ItemDetailConteiner />}
+                        />
+                        <Route path="/cart" element={<Cart />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
                 </CartContext>
             </BrowserRouter>
         </>

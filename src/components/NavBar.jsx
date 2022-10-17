@@ -24,15 +24,15 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link to="/" as={NavLink} className="text-white">HOME</Nav.Link>
-                        <Nav.Link to ="/categoria/all" as={NavLink} className="text-white">PRODUCTOS</Nav.Link>
+                        <Nav.Link to ="/categories/all" as={NavLink} className="text-white">PRODUCTOS</Nav.Link>
                         <NavDropdown variant="light"
                             title="CATEGORIAS"
                             id="basic-nav-dropdown"
                         >
-                            <NavDropdown.Item to="/categoria/1" as={NavLink}>
+                            <NavDropdown.Item to="/categories/1" as={NavLink}>
                                 Hombre
                             </NavDropdown.Item>
-                            <NavDropdown.Item to="/categoria/2" as={NavLink} >
+                            <NavDropdown.Item to="/categories/2" as={NavLink} >
                                 Mujer
                             </NavDropdown.Item>
                         </NavDropdown>

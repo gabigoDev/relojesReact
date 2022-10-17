@@ -18,7 +18,7 @@ const CartItem = ({ item }) => {
             <div className="flex-grow-1 d-flex gap-4 align-items-center">
                 <div className="flex-grow-1">
                     <h2 className="fw-bold">
-                        <Link to={"/productos/" + item.id}>{item.title}</Link>
+                        <Link to={"/item/" + item.id}>{item.title}</Link>
                     </h2>
                     <span className="text-truncate w-50">
                         {item.description.substring(0, 50)}...
