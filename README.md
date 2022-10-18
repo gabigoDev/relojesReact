@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Relojes React "All Dia".
+[![React](https://img.shields.io/npm/v/react?label=react&style=for-the-badge)](https://reactjs.org/)
 
-## Available Scripts
+E-commerce de relojes creado por Gabriel Jesus Lencinas, estudiante de de la Carrera de Desarrollo Frontend, en Coderhouse Argentina.
 
-In the project directory, you can run:
 
-### `npm start`
+## Indice
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [Caracteristicas](#caracteristicas)
+* [Correr Proyecto](#correr-proyecto)
+* [Autor](#autor)
+* [Sobre Mi](#sobre-mi)
+## Caracteristicas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Html y Css
+- Javascript
+- React Bootstrap
+- Firebase 
+- Sweet Alert
+- Icon Fontawesome
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Correr Proyecto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para poder correr el proyecto localmente debera seguir los siguientes pasos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clonar proyecto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+```bash
+  git clone https://github.com/gabigoDev/relojesReact.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Ir al directorio del proyecto clonado
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  cd relojesReact
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Instalar Dependencias
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  npm install
+```
 
-## Learn More
+- Iniciar el servidor
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm run start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- En caso de que el navegador no se abra automaticamente, deberas abrir la siguiente direccion en tu navegador por defecto:
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  - http://localhost:3000/
 
-### Analyzing the Bundle Size
+## Imagenes de proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Imgur](https://i.imgur.com/c0C21Cv.png)
 
-### Making a Progressive Web App
+![Imgur](https://i.imgur.com/AYO9Hgn.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Imgur](https://i.imgur.com/spSS19n.png)
+## Autor
 
-### Advanced Configuration
+### Gabriel Jesus Lencinas 
+![Logo](https://res.cloudinary.com/hdsqazxtw/image/upload/v1646145120/s7byopm7cenue3rvvr4q.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Git Hub](https://github.com/gabigoDev)
+- [Linkedin ](https://www.linkedin.com/in/gabriel-jesus-lencinas-a291b4232/)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🚀 Sobre Mi
+Mi nombre es Gabriel Jesus Lencinas, tengo 27 años, soy de la Provincia de Mendoza, Republica Argentina. 
+Soy estudiante de Administración de Empresas y este año me propuse aprender Desarrollo Frontend e iniciarme en el mundo de la programacion ya que estoy interesado en poder crear proyectos algun dia junto a colegas y llevarlos a cabo. 
+Una vez iniciado en estos nuevos conocimientos, estoy dispuesto a seguir aprendiendo y desarrollar nuevas habilidades como por ejemplo en el mundo de desarrollo backend.

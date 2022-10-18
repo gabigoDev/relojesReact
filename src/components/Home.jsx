@@ -1,4 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
+
 const Home = () => {
     return (
         <>
@@ -9,22 +10,22 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://stylewatchio.vtexassets.com/assets/vtex.file-manager-graphql/images/794b413f-6839-4ced-a0b2-05a1023cb488___d0f862cb03e0641c8d6ad6b8998b2950.jpg"
-                            alt="First slide"
+                            src="/imagenes/allDiaHome/carrouselUno.jpg"
+                            alt="reloj"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://stylewatchio.vtexassets.com/assets/vtex.file-manager-graphql/images/d3ec9436-2a3b-454e-809d-c0fc1199e5a8___a3457e190bddf0be60d0de4ebfc80837.jpg"
-                            alt="Second slide"
+                            src="/imagenes/allDiaHome/carrouselDos.jpg"
+                            alt="reloj"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://stylewatchio.vtexassets.com/assets/vtex.file-manager-graphql/images/adc073e6-2700-48c5-a255-6d523b12bff3___c4c8a9b81cc6dd76b829be475c457a03.jpg"
-                            alt="Third slide"
+                            src="/imagenes/allDiaHome/carrouselTres.jpg"
+                            alt="reloj"
                         />
                     </Carousel.Item>
                 </Carousel>
@@ -33,41 +34,48 @@ const Home = () => {
             <div>
                 <img
                     className="img-fluid"
-                    src="/imagenes/imgBulova.jpg"                    
+                    src="/imagenes/allDiaHome/imgBulova.jpg"
                     alt=""
                 />
             </div>
             <hr />
-            <section class="container p-3 mb-2">
-                <div class="row">
-                    <h2 class="col titulosSeccion">Destacados para vos.</h2>
+            <section className="container p-3 mb-2">
+                <div className="row">
+                    <h2 className="col titulosSeccion text-center tipografia">
+                        Destacados para vos.
+                    </h2>
                 </div>
-                <div class="row g-2">
-                    <div class="col-12 col-md-4 mb-3 p-3 card">
-                        <div class="card-body">
-                            <h3 class="card-title tipografia">
+                <div className="row g-2">
+                    <div className="col-12 col-md-4 mb-3 p-3 card">
+                        <div className="card-body">
+                            <h3 className="card-title tipografia">
                                 {" "}
                                 Reloj de mujer Tommy Hilfiger 1781970.
                             </h3>
-                            <p class="card-text">
+                            <img
+                                className="card-img-bottom"
+                                src="/imagenes/allDiaHome/cardUno.jpg"
+                                alt="reloj Tommy"
+                            />
+                            <p className="card-text">
                                 Este elegante reloj, con correa de acero
                                 inoxidable y esfera rosada, sofisticará tus
                                 atuendos deportivos o informales. Resistente al
                                 agua hasta 3 ATM / 30 metros.
                             </p>
                         </div>
-                        <img
-                            class="card-img-bottom"
-                            src="https://stylewatchio.vtexassets.com/arquivos/ids/167103-500-auto?v=1752413629&width=500&height=auto&aspect=true"
-                            alt="reloj Tommy"
-                        />
                     </div>
-                    <div class="col-12 col-md-4 mb-3 card p-3">
-                        <div class="card-body">
-                            <h3 class="card-title tipografia">
+                    <div className="col-12 col-md-4 mb-3 card p-3">
+                        <div className="card-body">
+                            <h3 className="card-title tipografia">
                                 Reloj Swatch SKIN CLASSIC BIOCERAMIC.
                             </h3>
-                            <p class="card-text tipografia">
+                            <img
+                                className="card-img-bottom"
+                                src="/imagenes/allDiaHome/cardDos.jpg"
+                                alt="reloj Swatch"
+                            />
+                            <p className="card-text tipografia">
                                 La esfera de este reloj Swatch SKIN CLASSIC
                                 BIOCERAMIC de color rosa pastel está diseñada
                                 con un cristal hecho con materiales de origen
@@ -78,18 +86,18 @@ const Home = () => {
                                 de plástico.
                             </p>
                         </div>
-                        <img
-                            class="card-img-bottom"
-                            src="https://stylewatchio.vtexassets.com/arquivos/ids/218259-500-auto?v=1752417169&width=500&height=auto&aspect=true"
-                            alt="reloj Swatch"
-                        />
                     </div>
-                    <div class="col-12 col-md-4 mb-3 card p-3">
-                        <div class="card-body">
-                            <h3 class="card-title tipografia">
+                    <div className="col-12 col-md-4 mb-3 card p-3">
+                        <div className="card-body">
+                            <h3 className="card-title tipografia">
                                 Reloj Bulova Marine Star.
                             </h3>
-                            <p class="card-text tipografia">
+                            <img
+                                className="card-img-bottom"
+                                src="/imagenes/allDiaHome/cardTres.jpg"
+                                alt="reloj Bulova"
+                            />
+                            <p className="card-text tipografia">
                                 Movimiento cronógrafo de 6 manecillas. Caja y
                                 hebilla en acero con acabado dorado. Correa
                                 especial de piel y caucho, con pespuntes en rojo
@@ -97,25 +105,20 @@ const Home = () => {
                                 tiempo transcurrido.
                             </p>
                         </div>
-                        <img
-                            class="card-img-bottom"
-                            src="https://stylewatchio.vtexassets.com/arquivos/ids/175289-500-auto?v=1752102263&width=500&height=auto&aspect=true"
-                            alt="reloj Bulova"
-                        />
                     </div>
                 </div>
                 <div>
                     <img
-                    className="img-fluid"
-                        src="/imagenes/imgTommy.jpg"
+                        className="img-fluid"
+                        src="/imagenes/allDiaHome/imgTommy.jpg"
                         alt=""
                     />
                 </div>
                 <hr />
                 <div>
                     <img
-                    className="img-fluid"
-                        src="/imagenes/imgPagos.jpg"
+                        className="img-fluid"
+                        src="/imagenes/allDiaHome/imgPagos.jpg"
                         alt="Medios de pago"
                     />
                 </div>

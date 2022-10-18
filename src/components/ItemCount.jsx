@@ -25,7 +25,8 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                 </button>
                 <input
                     className="form-control text-center"
-                    value={count} readOnly={true}
+                    value={count}
+                    readOnly={true}
                 ></input>
                 <button
                     className="btn btn-outline-primary"

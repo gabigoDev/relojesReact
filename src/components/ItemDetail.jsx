@@ -4,8 +4,6 @@ import ItemCount from "./ItemCount";
 import { Context } from "../components/CartContext";
 import Image from "react-bootstrap/Image";
 
-import style from "../App.css";
-
 const ItemDetail = (props) => {
     let item = props.item;
     const [countItems, setCountItems] = useState(0);
@@ -17,8 +15,11 @@ const ItemDetail = (props) => {
     };
 
     const linkToCart = (
-        <div className="d-grid">
-            <Link to="/cart" className="btn btn-outline-primary">
+        <div className="d-grid gap-2">
+            <Link to="/categories/all" className="btn btn-outline-success tipografia">
+                Seguir Comprando
+            </Link>
+            <Link to="/cart" className="btn btn-outline-primary tipografia">
                 Terminar Compra
             </Link>
         </div>
@@ -58,7 +59,7 @@ const ItemDetail = (props) => {
                     </ul>
                 </h4>
                 <hr />
-                {countItems == 0 ? (
+                {countItems === 0 ? (
                     <ItemCount initial={1} stock={5} onAdd={agregarItem} />
                 ) : (
                     linkToCart

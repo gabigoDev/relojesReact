@@ -16,13 +16,19 @@ const ItemDetailConteinter = () => {
             const itemData = response.data();
             if (itemData) {
                 setData({ id: response.id, ...response.data() });
-            }else {navigate("/notFound")}
+            } else {
+                navigate("/notFound");
+            }
         });
-    }, []);
+    }, [navigate,params.productId]);
 
     return (
         <Container>
-        {itemDetail.id ?<ItemDetail item={itemDetail} />:<LoadingWidget/>}
+            {itemDetail.id ? (
+                <ItemDetail item={itemDetail} />
+            ) : (
+                <LoadingWidget />
+            )}
         </Container>
     );
 };

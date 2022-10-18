@@ -6,7 +6,9 @@ const ItemList = ({ data = [] }) => {
         <Item key={watch.id} info={watch} />
     ));
     return (
-        <div className="d-flex gap-2 flex-wrap justify-content-around">{listaDeItems}</div>
+        <div className="d-flex gap-2 flex-wrap justify-content-around">
+            {listaDeItems}
+        </div>
     );
 };
 

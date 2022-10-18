@@ -17,7 +17,7 @@ const ItemListContainer = (props) => {
     const [loaded, setLoaded] = useState(false);
     const params = useParams();
     let filter = params.categoryId ? params.categoryId : false;
-    let loading = <LoadingWidget/>;
+    let loading = <LoadingWidget />;
     useEffect(() => {
         const fs = getFirestore(db);
         let itemRef = collection(fs, "items");
@@ -35,12 +35,12 @@ const ItemListContainer = (props) => {
             setData(data);
             setLoaded(true);
         });
-    }, [params]);
+    }, [filter]);
 
     return (
         <div>
-            <h1 className="text-center m-2 titular">
-                Tu tiempo, al alcance de tu mano.
+            <h1 className="text-center m-2 titular tipografia">
+                El tiempo, al alcance de tu mano.
             </h1>
             {loaded === false ? loading : contenido}
             <ItemList data={data} />

@@ -1,5 +1,11 @@
 {
   "name": "relojesReact",
+  "author": {
+    "name" : "Gabriel Jesus Lencinas",
+    "email" : "jesu9556@gmail.com",
+    "url" : "https://github.com/gabigoDev"
+  },
+  "description": "e-commerce de relojes creado para la Carrera de Desarrollo Frontend, en Coderouse Argentina.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

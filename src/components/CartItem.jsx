@@ -9,29 +9,32 @@ const CartItem = ({ item }) => {
         deleteItem(item.id);
     };
     return (
-        <li className="list-group-item gap-2 d-flex justify-content-between align-items-center">
+        <li className="list-group-item gap-1 d-flex justify-content-between align-items-center">
             <Image
                 rounded="true"
                 className={"img-thumbnail cart__image"}
                 src={item.image}
             ></Image>
-            <div className="flex-grow-1 d-flex gap-4 align-items-center">
-                <div className="flex-grow-1">
-                    <h2 className="fw-bold">
+            <div className="flex-grow-1 d-flex gap-2 align-items-center">
+                <div className="flex-grow-0">
+                    <h4 className="fw-bold">
                         <Link to={"/item/" + item.id}>{item.title}</Link>
-                    </h2>
-                    <span className="text-truncate w-50">
-                        {item.description.substring(0, 50)}...
-                    </span>
+                    </h4>
+                    <p className="text-wrap">
+                        {item.description.substring(0, 100)}...
+                    </p>
                 </div>
-                <h4>
-                    Cantidad: <span>{item.quantity}</span>
-                </h4>
-                <h4>
-                    $ <span>{item.quantity * item.price}</span>
-                </h4>
+                <p className="flex-grow-1 text-nowrap">
+                    Cantidad : {item.quantity}
+                </p>
+                <p className="flex-grow-1 text-nowrap">
+                    $ {item.quantity * item.price}
+                </p>
             </div>
-            <button className={"btn btn-danger"} onClick={handleBorrar}>
+            <button
+                className={"btn btn-danger flex-grow-0"}
+                onClick={handleBorrar}
+            >
                 Eliminar Producto
             </button>
         </li>
